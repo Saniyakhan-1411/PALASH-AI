@@ -1,4 +1,4 @@
-# 🌿 PALASH AI — Mother Tongue-Based Multilingual Education Platform
+# PALASH AI — Mother Tongue-Based Multilingual Education Platform
 
 > **Breaking language barriers in primary education through AI-powered voice learning in Ho, Mundari, and Santhali.**
 
@@ -346,3 +346,5 @@ This project is developed for educational and hackathon purposes.
 <div align="center">
   <strong>PALASH AI — Empowering every child to learn in their own voice.</strong>
 </div>
+<img width="1226" height="938" alt="image" src="https://github.com/user-attachments/assets/bb6cf631-5ca4-4a5f-999e-9bf6e581a884" />
+
