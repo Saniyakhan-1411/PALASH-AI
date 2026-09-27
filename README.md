@@ -26,7 +26,7 @@ PALASH AI is designed for multilingual classrooms where the teacher and students
 **Teacher speaks → AI understands → Content is translated → Student listens → Practice → Assessment → Learning insights → Offline sync**
 
 <p align="center">
-  <a href="YOUR_YOUTUBE_LINK">
+  <a href="https://youtube.com/shorts/vWAAsKzRgQk?si=GJOJx9ZEvs_h_9iG">
     ▶️ <strong>Watch the PALASH AI Demo</strong>
   </a>
 </p>
@@ -453,14 +453,6 @@ Provides:
 ---
 
 # 🏗️ System Architecture
-
-<p align="center">
-  <img
-    src="https://github.com/user-attachments/assets/bb6cf631-5ca4-4a5f-999e-9bf6e581a884"
-    alt="PALASH AI System Architecture"
-    width="900"
-  />
-</p>
 
 PALASH AI follows a modular architecture that separates the application layer, backend services, AI processing, database, and language resources.
 
