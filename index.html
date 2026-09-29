@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PALASH AI - Vernacular Pedagogy & Real-Time Translation</title>
+    <meta name="description" content="AI-Powered Vernacular Pedagogy and Real-Time Translation Tool for Mother Tongue-Based Primary Education (Government of Jharkhand)" />
+    <meta property="og:title" content="PALASH AI - Vernacular Pedagogy & Real-Time Translation" />
+    <meta property="og:description" content="AI-Powered Vernacular Pedagogy and Real-Time Translation Tool for Mother Tongue-Based Primary Education (Government of Jharkhand)" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Ol+Chiki:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      // Initialize dark theme immediately to prevent screen flash
+      try {
+        if (localStorage.getItem('palash_theme') === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {}
+
+      // Gracefully handle benign HMR/Vite dev websocket disconnections in sandboxed iframes
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason;
+        if (reason && (
+          (typeof reason === 'string' && reason.indexOf('WebSocket') !== -1) ||
+          (reason.message && reason.message.indexOf('WebSocket') !== -1)
+        )) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-stone-50 text-stone-900 antialiased font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

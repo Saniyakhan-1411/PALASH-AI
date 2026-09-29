@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Seamless global dark theme engine across Admin, Teacher, and Student portals */
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #0c0a09;
+  color: #f5f5f4;
+}
+
+/* Ensure background cards, panels, inputs, and borders invert cleanly */
+html.dark .bg-white {
+  background-color: #1c1917;
+  color: #f5f5f4;
+}
+
+html.dark .bg-stone-50 {
+  background-color: #24211e;
+  color: #f5f5f4;
+}
+
+html.dark .bg-stone-100 {
+  background-color: #171513;
+  color: #f5f5f4;
+}
+
+html.dark .border-stone-200 {
+  border-color: #383531;
+}
+
+html.dark .border-stone-100 {
+  border-color: #292524;
+}
+
+html.dark .border-stone-300 {
+  border-color: #44403c;
+}
+
+html.dark .text-stone-900 {
+  color: #fafaf9;
+}
+
+html.dark .text-stone-800 {
+  color: #f5f5f4;
+}
+
+html.dark .text-stone-700 {
+  color: #e7e5e4;
+}
+
+html.dark .text-stone-600 {
+  color: #d6d3d1;
+}
+
+html.dark .text-stone-500 {
+  color: #a8a29e;
+}
+
+html.dark .text-stone-400 {
+  color: #78716c;
+}
+
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #24211e;
+  color: #fafaf9;
+  border-color: #44403c;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #78716c;
+}

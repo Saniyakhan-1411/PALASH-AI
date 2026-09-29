@@ -1,0 +1,10 @@
+fastapi==0.110.0
+uvicorn==0.28.0
+pydantic==2.6.4
+torch==2.2.1
+transformers==4.38.2
+indic-nlp-library==0.92
+websockets==12.0
+python-multipart==0.0.9
+numpy==1.26.4
+scipy==1.12.0

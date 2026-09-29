@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  palash-backend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.backend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - MONGODB_URI=${MONGODB_URI:-mongodb://mongo:27017/palash_ai}
+      - AI_SERVICE_URL=http://palash-ai-service:8000
+    depends_on:
+      - palash-ai-service
+      - mongo
+    restart: unless-stopped
+
+  palash-ai-service:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.ai-service
+    ports:
+      - "8000:8000"
+    environment:
+      - CUDA_VISIBLE_DEVICES=""
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:6.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo_data:
